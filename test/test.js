@@ -8,3 +8,11 @@ describe("GET /", () => {
     
     })
 });
+
+
+describe("GET /greetings", () => {
+    it('responds with greetings', (done)=> {
+        request(app).get("/greetings").expect('Hi there', done);
+    
+    })
+});

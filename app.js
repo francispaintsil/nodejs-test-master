@@ -6,5 +6,9 @@ app.get('/', (req, res) => {
     res.send('Docker Test Show!');
 });
 
+app.get('/greetings', (req, res) => {
+    res.send('Hi there');
+});
+
 app.listen(port, () => { console.log('Firt Test of Docker App!'); });
 module.exports = app
