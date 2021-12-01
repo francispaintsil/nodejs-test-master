@@ -4,6 +4,7 @@ const app = express();
 
 app.get('/', (req, res) => {
 <<<<<<< HEAD
+<<<<<<< HEAD
     res.send('Docker Test Show!');
 });
 
@@ -18,4 +19,14 @@ app.listen(port, () => { console.log('Firt Test of Docker App!'); });
 
 app.listen(port, () => { console.log('Our App Is Up And Running!'); });
 >>>>>>> 4c2ece4148982e5421be1130d3b0756026048344
+=======
+    res.send('Docker Test Show!');
+});
+
+app.get('/greetings', (req, res) => {
+    res.send('Hi there');
+});
+
+app.listen(port, () => { console.log('Firt Test of Docker App!'); });
+>>>>>>> 1674986ad16608cc7a7f4db75a6dfda34a91c5b3
 module.exports = app
